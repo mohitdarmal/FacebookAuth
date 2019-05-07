@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 const keys = require('../keys');
+const keys = require('../herokukeys');
 
 mongoose.connect(keys.mongoUrl.connect, {useNewUrlParser:true});
 
