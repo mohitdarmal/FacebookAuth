@@ -3,7 +3,7 @@ const app = express();
 const routesSetup = require('./routes/routes-setup');
 const passportSetup = require('./config/passport-setup');
 const profileSetup = require('./routes/profile-setup');
-const keys = require('./keys');
+
 const keys = require('./herokukeys');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
