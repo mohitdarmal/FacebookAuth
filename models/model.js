@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const keys = require('../herokuKeys');
+const keys = require('../herokukeys');
 
 mongoose.connect('mongodb+srv://FacebookAuth:Mohit@321@facebookauth-cbvgc.mongodb.net/test?retryWrites=true', {useNewUrlParser:true});
 
