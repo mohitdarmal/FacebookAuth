@@ -1,14 +1,14 @@
 const keys = {
     fbKeys : {
-        clientID : process.env.CLIENT_ID,
-        clientSecret : process.env.CLIENT_SECRET,
+        clientID : process.env.clientID,
+        clientSecret : process.env.clientSecret,
     },
 
     cookieKeys : {
-        keys : process.env.COOKIE_KEY,
+        keys : process.env.cookieKeys,
     },
     mongoUrl : {
-        connect : process.env.MONGO_URI,
+        connect : process.env.mongoURL,
     }
 }
 
