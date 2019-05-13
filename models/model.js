@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const keys = require('../herokukeys');
 
-mongoose.connect(keys.mongoUrl.connect, {useNewUrlParser:true}).catch(e => {
+mongoose.connect('mongodb+srv://FacebookAuth:Mohit@321@facebookauth-cbvgc.mongodb.net/test?retryWrites=true', {useNewUrlParser:true}).catch(e => {
     console.error(e.message);
   });;
 
