@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const keys = require('../herokukeys');
+const keys = require('../herokuKeys');
 
 mongoose.connect(keys.mongoUrl.connect, {useNewUrlParser:true}).catch(e => {
     console.error(e.message);
