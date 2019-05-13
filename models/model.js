@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const keys = require('../herokukeys');
 
-mongoose.connect(keys.mongoUrl.connect, {useNewUrlParser:true});
+mongoose.connect('keys.mongoUrl.connect', {useNewUrlParser:true});
 
 const userSchema = new mongoose.Schema({
     facebookID : String,
