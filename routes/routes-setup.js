@@ -14,9 +14,12 @@ router.get('/facebook', passport.authenticate('facebook', {
     scope : ['email']
 }));
 
-router.get('/facebook/redirect', passport.authenticate('facebook'), (req, res) => {
-    res.redirect('/profile');
-    console.log(req.user)
+router.get('/facebook/redirect', passport.authenticate('facebook'),  {
+
+    successRedirect: '/profile',
+    failureRedirect: '/login'
+    /* res.redirect('/profile');
+    console.log(req.user) */
 });
 
 module.exports = router;
