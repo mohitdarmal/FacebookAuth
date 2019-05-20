@@ -19,7 +19,7 @@ passport.deserializeUser((id, done) => {
 passport.use(new FacebookStrategy({
     clientID: keys.fbKeys.clientID,
     clientSecret: keys.fbKeys.clientSecret,
-    callbackURL: '/auth/facebook/redirect',
+    callbackURL: 'https://dry-escarpment-34658.herokuapp.com/auth/facebook/redirect',
     profileFields: ['id', 'displayName', 'link', 'photos', 'email', 'gender', 'name', 'birthday', 'location', 'age_range', 'friends', 'hometown', 'likes', 'videos', ],
     passReqToCallback: false,
 
