@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const keys = require('../herokukeys');
 
-mongoose.connect('mongodb+srv://FacebookAuth:Mohit@321@facebookauth-cbvgc.mongodb.net/test?retryWrites=true', {useNewUrlParser:true});
+// mongoose.connect('mongodb+srv://FacebookAuth:Mohit@321@facebookauth-cbvgc.mongodb.net/test?retryWrites=true', {useNewUrlParser:true});
 
 
 const userSchema = new mongoose.Schema({
